@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Input</title>
+    <script type="text/javascript">      
+        var person = prompt("Please enter your name","");
+        if (person == null) {
+            txt = "You pressed cancel";
+        }
+        else if (person == "") {
+            txt = "Enter name";
+        }
+        else {
+            txt = "Hello " + person + "!\nHow are you?";
+        }
+        window.alert(txt);
+    </script>
+</head>
+<body>
+    <h1>Hi all</h1>
+</body>
+</html>
