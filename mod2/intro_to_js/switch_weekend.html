@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch Case</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var day = new Date().getDate();
+        switch(day){
+            case 4:
+            case 5:
+                text = "Be Happy, Soon it's weekend!";
+                break;
+            case 0:
+            case 6:
+                text = "it's weekend!";
+                break;
+            default:
+            text = "looking forward to the weekend";
+        }
+        alert(text);
+    </script>
+</body>
+</html>
