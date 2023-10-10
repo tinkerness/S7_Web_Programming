@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var value;
+        document.writeln("<h3>Random Numbers</h3><ol>");
+        for( var i=1; i<=20; ++i) {
+            // starts at 1 , max is 4
+            value = Math.floor(1 + Math.random() * 4)
+            document.writeln("<li> " + value + "</li>");
+        }
+        document.writeln("</ol>");
+    </script>
+</body>
+</html>

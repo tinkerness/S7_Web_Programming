@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+       // parseInt()
+       //isNaN()
+       //isFInite()
+       //eval()
+       // alert()
+       function printRes() {
+        var numStr = "42";
+        var parsedIntVal = parseInt(numStr);
+        alert("parsed integer : " + parsedIntVal);
+
+        var fStr = "42.01";
+        var parsedFVal = parseFloat(fStr);
+        alert("parsed float : " + parsedFVal);
+
+        numVal = 123;
+        strval = "happy";
+        alert(numVal + " isNaN : " + isNaN(numVal));
+        alert(strval + " isNaN : " + isNaN(strval));
+       }
+    </script>
+    <input type = "button" name = "button" value="printRes" onclick="printRes()">
+</body>
+</html>
