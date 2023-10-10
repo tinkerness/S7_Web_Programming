@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function process(){
+            <!-- var name = document.form1.name.value; -->
+            var name = document.getElementById("fname").value;
+            var age = document.form1.age.value;
+            alert("name : " + name);
+            alert("age : " + age);
+         }
+    </script>
+</head>
+<body>
+    <h1>Javascript Functions</h1>
+    <form name="form1" action="#" method="post">
+        <label>Javascript Functions</label><br><br>
+        <label>Name: </label>
+        <input type="text" name="name" id="fname"/>
+        <br><br>
+        <label>Age: </label>
+        <input type="text" name="age" id="age"/>
+        <br><br>
+        <input type="button" value="submit" onclick="process()"/>
+    </form>
+</body>
+</html>
