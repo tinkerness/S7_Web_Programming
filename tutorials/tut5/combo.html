@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combo</title>
+    <style>
+        body{
+            background-image: url('boat.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            margin: 20;
+            padding: 0;
+            background-attachment: fixed;
+            color:paleturquoise;
+            border: 10px dotted rgb(255, 238, 0);
+        }
+        header{
+            text-align: center;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        nav{
+            display: flex;
+            justify-content: space-around;
+        }
+        .custom-link{
+            text-decoration: none;
+            color: rgb(0, 225, 255);
+            padding: 15px 25px;
+        }
+        .custom-link:hover, .custom-link:active {
+            background-color: yellow;
+        }
+        section{
+            padding: 25px;
+        }
+        h1,h2{
+            text-align: center;
+        }
+        p{
+            text-align: justify;
+        }
+        ol{
+            list-style-type: lower-alpha;
+        }
+        table{
+            border-left: 5px dashed black;
+            border-right: 5px dashed black;
+            border-top: 10px double black;
+            border-bottom: 10px double black;
+            
+            padding: 8px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header><h2> The </h2><h1>Flower Farm </h1></header>
+    <hr>
+    <nav>
+        <a href="#home"  class="custom-link">HOME</a>
+        <a href="#collections"  class="custom-link">OUR COLLECTIONS</a>
+        <a href="#shop"  class="custom-link">SHOP</a>
+    </nav>
+    <hr>
+    <section>
+        <a name="home" id="home">
+            <h1>W E L C O M E !</h1>
+            <h2>About The Flower Farm</h2>
+            <p>The Flower Farm Corporation is considered one of the premier florists in the Philippines, we’ve been in the flower business for almost 40 years.</p>  
+            <p>We grow our own flowers primarily in our farm located in Tagaytay City. We are recognized as one of the pioneers in the cut flower industry of the Philippines for having introduced floral varieties never before grown in the country.</p>
+            <p>We continue being one of the leading florists of Manila for providing a full range of services that include design, delivery, and setup for all occasions.</p>
+            <p>From intimate parties, corporate launches, memorial services, to large weddings and more, TFFC promises to provide you with our freshest blooms.</p>
+        </a>
+    </section>
+    <hr>
+    <section>
+        <a name="collections" id="collections"><h1>COLLECTIONS</h1></a>
+        <ol>
+            <li>Chrysanthemums </li>
+            <li>Gerberas </li>
+            <li>Anthuriums </li>
+            <li>Sunflowers</li>
+        </ol>    
+    </section>
+    <hr>
+    <section>
+        <a name="shop" id="shop"><h1>SHOP</h1></a>
+        <table class="table-style">
+            <tr>
+                <th>TYPE</th>
+                <th>PRICE</th>
+            </tr>
+            <tr>
+                <td>Rosalind</td>
+                <td>4,500.00</td>
+            </tr>
+            <tr>
+                <td >Eloise</td>
+                <td>2,000.00</td>
+            </tr>
+        </table>
+    </section>
+</body>
+</html>
