@@ -8,10 +8,13 @@
 <body>
     <?php
     $name = "Anitta";
-    $txt = "Web Programming using PHP";
-    echo "<center><b>I love $txt!</b></center>";
-    // echo '<center><b>I love \n $txt!</b></center>';
-    print("<h1><center>Welcome to PHP, $name!</center></h1>");
+    if (is_string($name)) {
+        echo "datatype of $name is string<br/><br/>";
+    }
+    $height = 100.00;
+    if (is_float($height)) {
+        echo "datatype of $height is float";
+    }
     ?>
 </body>
 </html>
