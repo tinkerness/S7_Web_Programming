@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thumbnail Images</title>
+    <style>
+        .thumbnail {
+        width: 100px;
+        height: 75px;
+        margin: 5px;
+        cursor: pointer;
+        }
+
+        .image-container {
+        display: none;
+        }
+    </style>
+</head>
+<body>
+    <img src="boat_tn.gif" alt="Image 1" data-fullsize="boat.jpg" class="thumbnail" />
+    <img src="flower_tn.png" data-fullsize="flower.png" alt="Image 2" class="thumbnail" />
+    <img src="boat_tn.gif" data-fullsize="boat.jpg" alt="Image 3" class="thumbnail" />
+
+    <div class="image-container">
+        <img src="" id="fullImage" alt="Full-sized Image" />
+    </div>
+
+    <script>
+        // tn-img
+        const thumbnails = document.querySelectorAll(".thumbnail");
+        // full-img
+        const imageContainer = document.querySelector(".image-container");
+        const fullImage = document.getElementById("fullImage");
+      
+        // event listener
+        thumbnails.forEach(thumbnail => {
+            thumbnail.addEventListener("click", ViewFullImage);
+        });
+      
+        function ViewFullImage() {
+            const fullSizeSrc = this.getAttribute("data-fullsize");
+            fullImage.src = fullSizeSrc;
+            imageContainer.style.display = "block";
+        }
+    </script>
+</body>
+</html>
