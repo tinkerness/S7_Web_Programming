@@ -8,16 +8,23 @@
 <body>
     <h1>Positive Number</h1>
 
-    <form method="post">
-        <label for="number">Enter a number:</label>
-        <input type="number" name="number" id="number" required />
-        <input type="submit" value="Submit" />
-        <br/><br/>
-    </form>
+    <script>
+        function askForPositiveNumber() {
+            let number;
+            // do {
+                number = prompt("Enter a positive number:");
+            // } while (number !== null && (isNaN(number) || parseFloat(number) <= 0));
+            
+            if (number !== null) {
+                fetch('positive_num.php');
+            }
+        }
+        askForPositiveNumber();
+    </script>
 
     <?php
     if ($_SERVER["REQUEST_METHOD"] === "POST") {
-        $number = filter_input(INPUT_POST, 'number', FILTER_VALIDATE_FLOAT);
+        $number = filter_input(INPUT_POST, 'number');
         if ($number !== false && $number > 0) {
             echo "You entered a positive number: $number";
         } else {
