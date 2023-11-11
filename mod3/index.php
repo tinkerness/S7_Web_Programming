@@ -12,7 +12,7 @@
     $name = "Anitta";
     $txt = "Web Programming using PHP";
     echo "<center><b>I love $txt!</b></center>";
-    // echo '<center><b>I love \n $txt!</b></center>';
+    // echo "<center><b>I love <br> $txt!</b></center>";
     print("<h1><center>Welcome to PHP, $name!</center></h1>");
     ?>
     <section>
@@ -28,6 +28,11 @@
                 <li><a href="randomNum.php">Random Number</a></li>
                 <li><a href="constants.php">Constants</a></li>
                 <li><a href="dateValue.php">Date</a></li>
+                <li><a href="carobj.php">Class & Objects</a></li>
+                <li><a href="PatternMatch.php">Pattern-Match</a></li>
+                <li><a href="override.php">Method Overriding</a></li>
+                <li><a href="strcmp.php">String Compare</a></li>
+                <li><a href="regex.php">Regular Expressions</a></li>
             </ul>
         </div>
     </section>
