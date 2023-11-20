@@ -21,13 +21,18 @@
         <section>
             <h2><br>Files</h2>
             <div class="content">
-                <ul>
+                <ol>
                     <li> <a href="odd_even.php">odd or even</a></li>
                     <li> <a href="word_count.php">word count</a></li>
                     <li> <a href="armstrong.php">armstrong number</a></li>
                     <li> <a href="str_pattern.php">string pattern</a></li>
                     <li> <a href="names_sort.php">sort student names</a></li>
-                </ul>
+                    <li> <a href="arraysorting.php">sorting associative array</a></li>
+                    <li> <a href="factorial.php">factorial</a></li>
+                    <li> <a href="items_assocarr.php"> associative array named “items”</a></li>
+                    <li> <a href="get_method.php">get method in form</a></li>
+                    <li> <a href="pos_neg_num.php">positive or negative</a></li>
+                </ol>
             </div>
         </section>
     </div>
