@@ -3,7 +3,7 @@ $dbname="testdb";
 $conn = mysqli_connect("localhost","root","","testdb");
 if(!$conn)
 {
-    die("Connection failed" .mysqli_connect_error());
+   die("Connection failed" .mysqli_connect_error());
 }
 // update db
  $sql ="UPDATE testtable SET testfield='I love India' WHERE id=2";

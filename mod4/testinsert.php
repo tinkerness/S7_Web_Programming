@@ -8,7 +8,9 @@ if($conn)
 else{
     die("Connection failed" .mysqli_connect_error());
 }
-$sql ="INSERT INTO testtable(testfield) VALUES ('$_POST[testfield]')";
+// create query
+ $sql ="INSERT INTO testtable(testfield) VALUES ('$_POST[testfield]')";
+//  execute query
  $res = mysqli_query($conn,$sql);
  if($res=== TRUE)
  {
