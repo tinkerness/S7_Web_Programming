@@ -1,0 +1,64 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Record of Employee",
+    "$id": "https://example.com/employee.schema.json",
+    "description": "This document records the details of an employee",
+    "type": "object",
+    
+    "properties": {
+        "id": {
+            "type": "integer",
+            "description": "Employee ID"
+        },
+        "name": {
+            "type": "string",
+            "description": "Employee's full name"
+        },
+        "age": {
+            "type": "integer",
+            "minimum": 18,
+            "description": "Employee's age"
+        },
+        "department": {
+            "type": "string",
+            "description": "Employee's department"
+        },
+        "salary": {
+            "type": "number",
+            "minimum": 0,
+            "description": "Employee's salary"
+        },
+        "active": {
+            "type": "boolean",
+            "description": "Employee's active status"
+        },
+        "skills": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "description": "list of employee's skills"
+        },
+        "hobbies": {
+            "type": "object",
+            "properties": {
+                "indoor": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "description": "List of indoor hobbies"
+                },
+                "outdoor": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "description": "List of outdoor hobbies"
+                }
+            },
+            "description": "Indoor and outdoor hobbies"
+        }
+    },
+    "required": ["id", "name", "age", "department", "salary", "active", "skills", "hobbies"]
+}

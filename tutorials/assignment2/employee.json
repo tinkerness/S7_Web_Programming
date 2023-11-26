@@ -1,0 +1,13 @@
+{
+    "id": 110,
+    "name": "John Doe",
+    "age": 28,
+    "department": "Marketing",
+    "salary": 50000,
+    "active": true,
+    "skills": ["English", "Content Creation", "Social Media Management"],
+    "hobbies": {
+        "indoor": ["Chess", "Reading"],
+        "outdoor": ["Cycling", "Football"]
+    }
+}
