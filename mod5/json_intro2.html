@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON</title>
+</head>
+<body>
+    <h2>Accessing JSON</h2>
+    <p id="demo"></p>
+    <script>
+        var myobj = {
+            "name":"John",
+            "age":30,
+            "city":"Pala",
+            // "hobbies":["singing","dancing","reading"],
+            "cars":{
+                "car1":"Ford",
+                "car2":"BMW",
+                "car3":"Fiat"
+            }
+        };
+        
+        for (var key in myobj) {
+            if (myobj.hasOwnProperty(key)) {
+                document.writeln(key + " : " + myobj[key] + "<br/>");
+            }
+        }
+
+        document.writeln("<br/>");
+        for(var key in myobj.cars) {
+            if (myobj.cars.hasOwnProperty(key)) {
+                document.writeln(key + " : " + myobj.cars[key] + "<br/>");
+            }
+        }
+
+        document.writeln("<br/>");
+        for (var key in myobj) {
+            if (myobj.hasOwnProperty(key)) {
+                var prptyvalue = myobj[key];
+
+                if (typeof prptyvalue === 'object' && prptyvalue !== null) {
+                    for (var nestedkey in prptyvalue) {
+                        if (prptyvalue.hasOwnProperty(nestedkey)) {
+                            document.write(key + "." + nestedkey + " : " + prptyvalue[nestedkey] + "<br/>");
+                        }
+                    }
+                }
+
+                else {
+                    document.write(key + " : " + prptyvalue + "<br/>");
+                }
+            }
+        }
+    </script>
+</body>
+</html>

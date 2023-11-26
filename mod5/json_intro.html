@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON</title>
+</head>
+<body>
+    <h2>Accessing JSON</h2>
+    <p id="demo"></p>
+    <script>
+        var myobj = {
+            "name":"John",
+            "age":30,
+            "city":"Pala",
+            "hobbies":["singing","dancing","reading"]
+        };
+        document.getElementById("demo").innerHTML = "Name : "+myobj.name+"<br/>Age : "+myobj.age+"<br/>City : "+myobj.city;
+
+        document.writeln("Using for in<br/>");
+        for(x in myobj) {
+            document.writeln(x +" : " + myobj[x]+"<br/>");
+        }
+    </script>
+</body>
+</html>
