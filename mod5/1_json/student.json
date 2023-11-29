@@ -1,0 +1,10 @@
+{
+    "first_name" : "Anitta",
+    "last_name" : "Siby",
+    "branch" : "CSE",
+    "year" : 4,
+    "hobbies" : {
+        "indoor" : ["reading"],
+        "outdoor" : ["cycling"]
+    }
+}

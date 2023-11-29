@@ -1,0 +1,44 @@
+{
+    "$schema": "https://json-schema.org/draft-04/schema#",
+    "$id": "https://example.com/student.schema.json",
+    "title": "Record of Student",
+    "description": "This document records the details of a student",
+    "type": "object",
+
+    "properties": {
+        "first_name" : {
+            "description": "first name of student",
+            "type": "string"
+        },
+        "last_name" : {
+            "description": "last name of student",
+            "type": "string"
+        },
+        "branch" : {
+            "description": "branch of student",
+            "type": "string"
+        },
+        "year" : {
+            "description": "current year of study of student",
+            "type": "number"
+        },
+        "hobbies" : {
+            "indoor" : {
+                "type": "array",
+                "items": {
+                    "description": "student's indoor hobbies",
+                    "type": "string"
+                }
+            },
+            "outdoor" : {
+                "type": "array",
+                "items": {
+                    "description": "student's outdoor hobbies",
+                    "type": "string"
+                }
+            }
+        }
+    },
+
+    "required": ["first_name", "last_name","branch","year","hobbies"]
+}
