@@ -3,7 +3,7 @@ $dbname="testdb";
 $conn = mysqli_connect("localhost","root","","testdb");
 if($conn)
 {
-    echo "Connection to ".$dbname." establihed successfully";
+    echo "Connection to ".$dbname." established successfully";
 }
 else{
     die("Connection failed" .mysqli_connect_error());

@@ -19,9 +19,18 @@
         <h2><br>Files</h2>
         <div>
             <ul>
+                <!-- Form Processing -->
+                <li><a href="calculate.php">Calculator</a></li>
+                
+                <!-- Cookies & Sessions -->
+                <li><a href="cookie.php">Cookies</a></li>
+                <li><a href="savecookie.php">Write Cookies</a></li>
+                <li><a href="testlogin.php">Session</a></li>
+                
+                <!-- MySQL -->
                 <li><a href="conn_test.php">Connection</a></li>
-                <li>Run <a href="testinsert.php">Insert into table</a> using <a href="testform.html">HTML form</a></li>
-                <li><a href="insert2.php">insert 2</a></li>
+                <li>Run <a href="testinsert.php">Insert into table</a> using <a href="testform1.html">HTML form 1</a></li>
+                <li><a href="insert2.php">insert 2</a> using <a href="testform2.html">HTML form 2</a></li>
                 <li><a href="tablecreate.php">create table</a></li>
                 <li><a href="update.php">update</a></li>
                 <li><a href="fetchdata.php">Display data in table</a></li>
