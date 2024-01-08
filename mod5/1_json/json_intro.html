@@ -6,8 +6,8 @@
     <title>JSON</title>
 </head>
 <body>
-    <h2>Accessing JSON</h2>
-    <p id="demo"></p>
+    <h2>Accessing JSON Object in JavaScript</h2>
+    <p id="demo" style="border: 1px solid black;"></p>
     <script>
         var myobj = {
             "name":"John",
@@ -15,9 +15,9 @@
             "city":"Pala",
             "hobbies":["singing","dancing","reading"]
         };
-        document.getElementById("demo").innerHTML = "Name : "+myobj.name+"<br/>Age : "+myobj.age+"<br/>City : "+myobj.city;
+        document.getElementById("demo").innerHTML = "Name : "+myobj.name + "<br/>Age : " +myobj.age + "<br/>City : "+myobj.city + "<br/>Hobbies : "+myobj.hobbies;
 
-        document.writeln("Using for in<br/>");
+        document.writeln("<h3>Using for in</h3>");
         for(x in myobj) {
             document.writeln(x +" : " + myobj[x]+"<br/>");
         }

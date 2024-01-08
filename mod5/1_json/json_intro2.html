@@ -13,7 +13,7 @@
             "name":"John",
             "age":30,
             "city":"Pala",
-            // "hobbies":["singing","dancing","reading"],
+            "hobbies":["singing","dancing","reading"],
             "cars":{
                 "car1":"Ford",
                 "car2":"BMW",
@@ -21,25 +21,28 @@
             }
         };
         
+        document.writeln("<h3> top level properties</h3>");
         for (var key in myobj) {
             if (myobj.hasOwnProperty(key)) {
                 document.writeln(key + " : " + myobj[key] + "<br/>");
             }
         }
 
-        document.writeln("<br/>");
+        document.writeln("<br/><h3> nested object properties</h3>");
         for(var key in myobj.cars) {
             if (myobj.cars.hasOwnProperty(key)) {
                 document.writeln(key + " : " + myobj.cars[key] + "<br/>");
             }
         }
 
+        // document.writeln("<br/><h3> display properties of top level objects </h3>");
         document.writeln("<br/>");
         for (var key in myobj) {
             if (myobj.hasOwnProperty(key)) {
                 var prptyvalue = myobj[key];
-
+                
                 if (typeof prptyvalue === 'object' && prptyvalue !== null) {
+                    // document.writeln("<br/><h3> when typeof prptyvalue === 'object' </h3>");
                     for (var nestedkey in prptyvalue) {
                         if (prptyvalue.hasOwnProperty(nestedkey)) {
                             document.write(key + "." + nestedkey + " : " + prptyvalue[nestedkey] + "<br/>");

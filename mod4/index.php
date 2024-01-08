@@ -20,13 +20,17 @@
         <div>
             <ul>
                 <!-- Form Processing -->
+                <li><a href="form1.php">Form</a></li>
                 <li><a href="calculate.php">Calculator</a></li>
-                
+            </ul>
+            <ul>
                 <!-- Cookies & Sessions -->
                 <li><a href="cookie.php">Cookies</a></li>
                 <li><a href="savecookie.php">Write Cookies</a></li>
-                <li><a href="testlogin.php">Session</a></li>
-                
+                <li><a href="setsession.php">Set session</a></li>
+                <li><a href="testlogin.php">Session example</a></li>
+            </ul>
+            <ul>    
                 <!-- MySQL -->
                 <li><a href="conn_test.php">Connection</a></li>
                 <li>Run <a href="testinsert.php">Insert into table</a> using <a href="testform1.html">HTML form 1</a></li>

@@ -5,7 +5,7 @@ if (isset($_POST["submit"])) {
     $name = $_COOKIE["name"];
     $colour = $_COOKIE["colour"];
     echo "Cookies set :<br/>";
-    echo "Name : $name <br/> Colour : $colour <br/> ";
+    echo "Name : $name <br/> Colour : <span style='color: $colour'> $colour </span><br/> ";
 }
 else{
     ?>

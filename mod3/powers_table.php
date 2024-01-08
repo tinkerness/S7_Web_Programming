@@ -17,7 +17,7 @@
                 $quad = pow($num,4);
 
                 // print("$num, $root, $square, $cube, $quad<br/>");
-                print("<tr align='center'><td>$num</td><td>$root</td><td>$square</td><td>$cube</td><td>$quad</td></tr>");
+                print("<tr align='center'> <td>$num</td> <td>$root</td> <td>$square</td> <td>$cube</td> <td>$quad</td> </tr>");
             }
         ?>
     </table>

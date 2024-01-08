@@ -11,7 +11,7 @@
     // foreach ($str as  $product => $price) {
     //     echo "$product: $price <br/>";
     // }
-    $arr = array("Apple", "Banana", "Orange", "Grape");
+    // $arr = array("Apple", "Banana", "Orange", "Grape");
     // print("$arr </br>");
     $str = implode(", ", $arr);
     echo $str;

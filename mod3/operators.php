@@ -18,6 +18,7 @@
         echo 'a / b = '.$a/$b; echo '<br>';
         echo 'a % b = '.$a%$b; echo '<br>';
 
+        echo '<br><b>Increment Operators</b><br>';
         $new_a = $a;
         $a++;
         echo "a++ = $a"; echo '<br>';

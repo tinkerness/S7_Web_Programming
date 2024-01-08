@@ -9,6 +9,7 @@
 <body>
 
     <?php
+    $result = '';
     if(isset($_GET["operator"]))
     {
         $n1 = $_GET['num1'];
@@ -31,7 +32,7 @@
                     $res = $n1 / $n2;
                     break;
             }
-            // echo "Result = " . $res;
+            $result = "Result : " . $res;
         }
     }
     else{
@@ -50,8 +51,8 @@
         <input type="submit" name="operator" value="Mul"/>
         <input type="submit" name="operator" value="Div"/>
         <br/><br/>
-        Result : <?php echo $res; ?>
-        <br/><br/>
+    
+        <?php echo $result; ?> <br/><br/>
     </form>
     
 </body>

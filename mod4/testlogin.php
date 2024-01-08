@@ -8,6 +8,7 @@ session_start();
             if ($input_name == "admin" && $input_pswd == "admin123") {
                 $_SESSION["username"] = $input_name;
                 header("Location: welcome.php");
+                // exit();
             }
             else {
                 $errormsg = "Invalid username and password!";

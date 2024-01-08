@@ -9,7 +9,8 @@
     <?php
         $a = 10.5;
         $b = 5;
-        echo "a = $a <br> b = $b<br>";
+        $c = -3;
+        echo "a = $a <br> b = $b<br> c = $c <br>";
         
         echo '<br><b>Predefined Functions</b><br>';
         echo "floor($a) = ".floor($a); echo '<br>';
@@ -17,9 +18,9 @@
         echo "round($a) = ".round($a); echo '<br>';
         echo "rand($a,$b) = ".rand($a,$b); echo '<br>';
         echo "srand($b) = ".srand($b); echo '<br>';
-        echo "abs($a,$b) = ".abs($a); echo '<br>';
-        echo "min($a,$b) = ".min($a,$b); echo '<br>';
-        echo "max($a,$b) = ".max($a,$b); echo '<br>';
+        echo "abs($c) = ".abs($c); echo '<br>';
+        echo "min($a,$b,$c) = ".min($a,$b,$c); echo '<br>';
+        echo "max($a,$b,$c) = ".max($a,$b,$c); echo '<br>';
     ?>
 </body>
 </html>

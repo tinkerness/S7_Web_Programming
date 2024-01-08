@@ -10,6 +10,7 @@
         define("MINSIZE",50);
         echo MINSIZE; echo '<br>';
         echo constant("MINSIZE"); echo '<br>';
+        
         define("ONE",     "first thing");
         echo ONE; echo '<br>';
         define("TWO2",     "second thing");

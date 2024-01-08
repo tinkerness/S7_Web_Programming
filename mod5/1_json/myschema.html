@@ -1,21 +1,25 @@
 <script type="module">
-    import Ajv from "https://cdn.skypack.dev/ajv@8.6.2";
-       const ajv = new Ajv(); 
-const schema = {
- type: "object",
- properties: {
-   name: { type: "string" },
-   age: { type: "number", minimum: 18 },
- },
- required: ["name", "age"],
-};
-const validate = ajv.compile(schema);
-const data = { name: "John", age: 25 };
-const isValid = validate(data);
-if (isValid) {
- console.log('Data is valid according to the schema');
-} else {
- console.log('Data is not valid:');
- console.log(validate.errors);
-}
+  import Ajv from "https://cdn.skypack.dev/ajv@8.6.2";
+  const ajv = new Ajv();
+
+  const schema = {
+    type: "object",
+    properties: {
+      name: { type: "string" },
+      age: { type: "number", minimum: 18 },
+    },
+    required: ["name", "age"],
+  };
+
+  const validate = ajv.compile(schema);
+
+  const data = { name: "John", age: 25 };
+  const isValid = validate(data);
+  
+  if (isValid) {
+    console.log('Data is valid according to the schema');
+  } else {
+    console.log('Data is not valid!');
+    console.log(validate.errors);
+  }
 </script>

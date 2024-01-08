@@ -1,4 +1,7 @@
 <?php
+echo '$str = "Welcome to PHP World"';
+echo "<br/><br/>";
+
 echo ("Explode Funtion<br/>");
 $str = "Welcome to PHP World";
 $words = explode(" ",$str);

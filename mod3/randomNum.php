@@ -9,9 +9,9 @@
     <?php
     echo '<br><b>Random Integer</b><br>';
     
-    echo(rand(). "<br>");
-    echo(rand(). "<br>");
-    echo(rand(10,100). "<br>");
+    echo("rand() = " .rand(). "<br>");
+    echo("rand() = " .rand(). "<br>");
+    echo("rand(10,100) = " .rand(10,100). "<br>");
     ?>
 </body>
 </html>
